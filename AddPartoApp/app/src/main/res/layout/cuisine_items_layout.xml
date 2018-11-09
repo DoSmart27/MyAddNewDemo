@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_5dp"
+        android:background="@color/colorPrimary">
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cuisine_lists"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/img_cancel_alert"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/popup_cancel_img" />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/cuisine_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header_layout"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_cuisine"
+        android:padding="@dimen/padding_5dp"></ListView>
+
+
+
+    <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+        android:id="@+id/add_cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_cuisine"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:padding="@dimen/padding_10dp"/>
+    </RelativeLayout>

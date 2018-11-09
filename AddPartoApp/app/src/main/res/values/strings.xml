@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">Add Partner App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_vendor">Add Vendor</string>
+    <string name="view_vendors">View Vendors</string>
+    <string name="add_menu_items">Add Menu Items</string>
+    <string name="view_menu_items">View Menu Items</string>
+    <string name="restaurant_id">Restaurant Id</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="cuisines">Cuisines</string>
+    <string name="address">address</string>
+    <string name="lattitude">Lattitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="locality">Locality</string>
+    <string name="sub_locality">Sub Locality</string>
+    <string name="admin_area">Admin Area</string>
+    <string name="sub_admin_area">Sub Admin Area</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="status">Status</string>
+    <string name="submit">Submit</string>
+
+    <string name="this_field_required">This field required</string>
+    <string name="please_enter_valid_phone_number">Please enter valid phone number</string>
+    <string name="please_select_cuisine">Please select Cuisine</string>
+    <string name="please_select_status">Please select Status</string>
+    <string name="error_intenet_unavailable">Intenet unavailable</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="retry">Retry</string>
+    <string name="cuisine_lists">Cuisine List</string>
+    <string name="invalidate_email">Please enter valid email address</string>
+    <string name="item_code">Item Code</string>
+    <string name="item_name">Item Name</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="max_qty">Max Qty</string>
+    <string name="please_select_type">Please select Type</string>
+    <string name="user_name_or_mobile_no">Username or Mobile number</string>
+    <string name="login">Login</string>
+    <string name="add_cuisine">Add Cuisine</string>
+    <string name="edit_vendor">Edit Vendor</string>
+    <string name="delete_vendor">Delete Vendor</string>
+    <string name="update">Update</string>
 </resources>

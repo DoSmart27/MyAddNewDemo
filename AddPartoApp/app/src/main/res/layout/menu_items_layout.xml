@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layoutbackground"
+    android:padding="@dimen/padding_5dp"
+    android:layout_margin="@dimen/padding_5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextViewSemiBold
+            android:id="@+id/category_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:layout_height="wrap_content"
+            style="@style/text_view_style"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextViewLight
+            android:id="@+id/restaurant_id"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:orientation="horizontal">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/max_qty"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

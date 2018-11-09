@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.globalutils.screens.navigationfragments.AddMenuitemsFrg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_10dp">
+
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/item_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:hint="@string/item_code"
+                style="@style/text_view_style"
+                android:padding="@dimen/padding_10dp" />
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:hint="@string/item_name"
+                style="@style/text_view_style"
+                android:padding="@dimen/padding_10dp" />
+
+            <Spinner
+                android:id="@+id/spinner_item_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:padding="@dimen/padding_10dp"></Spinner>
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:hint="@string/category"
+                style="@style/text_view_style"
+                android:padding="@dimen/padding_10dp" />
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:hint="@string/price"
+                style="@style/text_view_style"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/padding_10dp" />
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/max_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:hint="@string/max_qty"
+                style="@style/text_view_style"
+                android:inputType="number"
+                android:padding="@dimen/padding_10dp" />
+            <Spinner
+                android:id="@+id/spinner_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@drawable/layoutbackground"
+                android:padding="@dimen/padding_10dp"></Spinner>
+
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+                android:id="@+id/text_submit"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:background="@drawable/layout_selected"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/white"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

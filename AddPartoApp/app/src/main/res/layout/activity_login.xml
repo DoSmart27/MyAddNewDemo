@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.globalutils.screens.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:textSize="@dimen/text_subheading_size_18"
+            android:gravity="center"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_10dp">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/user_name_or_mobile_no"
+            style="@style/text_view_style"
+            android:padding="@dimen/padding_10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layoutbackground"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:padding="@dimen/padding_10dp"
+            android:orientation="horizontal">
+
+
+            <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+                android:id="@+id/edit_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                style="@style/text_view_style"
+                android:inputType="textPassword" />
+            <ImageView
+                android:id="@+id/show_password"
+                android:layout_width="@dimen/padding_25dp"
+                android:layout_height="@dimen/padding_25dp"
+                android:layout_marginRight="@dimen/padding_5dp"
+                android:visibility="gone"
+                android:src="@drawable/show_password"/>
+            <ImageView
+                android:id="@+id/hide_password"
+                android:layout_width="@dimen/padding_25dp"
+                android:layout_height="@dimen/padding_25dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/padding_5dp"
+                android:src="@drawable/hide_password"/>
+        </LinearLayout>
+
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:padding="@dimen/padding_10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5"></LinearLayout>
+</LinearLayout>
+</RelativeLayout>

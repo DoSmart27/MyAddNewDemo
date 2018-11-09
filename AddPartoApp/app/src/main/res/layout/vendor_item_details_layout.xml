@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layoutbackground"
+    android:padding="@dimen/padding_5dp"
+    android:layout_margin="@dimen/padding_5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextViewSemiBold
+        android:id="@+id/restaurant_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/item_name"
+        android:layout_height="wrap_content"
+        style="@style/text_view_style"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextViewLight
+        android:id="@+id/restaurant_id"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/item_name"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:orientation="horizontal">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/restaurant_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/item_name"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orange"
+        android:clickable="true"
+        android:isIndicator="false"
+        android:visibility="gone"
+        android:numStars="5"
+        android:theme="@style/RatingBar"
+        android:progressTint="@color/orange"
+        android:secondaryProgressTint="@color/orange" />
+</LinearLayout>

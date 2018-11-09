@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/tv_headerText"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="asdfasfaf"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+
+
+
+
+    </LinearLayout>
+
+    <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp" />
+
+
+
+
+    <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView     android:id="@+id/tv_headerText_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/padding_5dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_10dp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/two_btns_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_headerText_1"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3" />
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/custom_alert_btn_height"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="Yes"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2" />
+
+        <Button
+            android:id="@+id/dialogCancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/custom_alert_btn_height"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="No"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/invisable_wight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ok_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ok_default_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/custom_alert_btn_height"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Ok"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

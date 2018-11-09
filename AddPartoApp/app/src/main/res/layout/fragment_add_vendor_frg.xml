@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.globalutils.screens.navigationfragments.AddVendorFrg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10dp">
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_restaurant_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/restaurant_id"
+            style="@style/text_view_style"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/restaurant_name"
+            style="@style/text_view_style"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/mobile"
+            style="@style/text_view_style"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/email"
+            style="@style/text_view_style"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/password"
+            style="@style/text_view_style"
+            android:inputType="textPassword"
+            android:padding="@dimen/padding_10dp" />
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_cuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/cuisines"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/address"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_lattitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/lattitude"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/longitude"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_locality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/locality"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_sub_locality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/sub_locality"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_admin_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/admin_area"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_sub_admin_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/sub_admin_area"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/country"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomEditText
+            android:id="@+id/text_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:hint="@string/pincode"
+            style="@style/text_view_style"
+            android:inputType="textPostalAddress"
+            android:padding="@dimen/padding_10dp" />
+        <Spinner
+            android:id="@+id/spinner_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:background="@drawable/layoutbackground"
+            android:padding="@dimen/padding_10dp"></Spinner>
+
+
+        <com.vvc.addpartoapp.presentation.globalutils.custom.CustomTextView
+            android:id="@+id/text_submit"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="@drawable/layout_selected"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_10dp"
+            android:textColor="@color/white"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
